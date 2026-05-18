@@ -51,7 +51,8 @@ To handle 500V+ RF peaks and distribute heat, standard **Yageo 1206 630V C0G cer
 * **Trace Architecture:** The main LPF signal path uses heavy **6 mm wide traces**, mirrored identically on the top and bottom layers to act as a 2 oz equivalent.
 * **Via Stitching:** Top and bottom traces are tied together using vias spaced precisely every **5 mm along the trace borders** to combat the skin effect and create a highly efficient thermal superhighway. 
 * **Ground Plane:** Solid copper pours on top and bottom, featuring a 5 mm checkered/staggered via grid. Dense via clusters are placed immediately at the ground pads of C1, L3, and the coax shields. Isolation gaps are set to 3-5 mm to prevent 500V+ arc-overs.
-* **Solder Mask Management:** * *Removed* (`tStop`/`bStop`) along the main 6 mm LPF path to allow for heavy "solder river" tinning to handle 6A+ RF peaks.
+* **Solder Mask Management:**
+  * *Removed* (`tStop`/`bStop`) along the main 6 mm LPF path to allow for heavy "solder river" tinning to handle 6A+ RF peaks.
   * *Retained* on the 2 mm traces between the series SMD capacitors to act as a solder dam during assembly.
 * **Magnetic Keep-Out Zones:** Ground pours are **completely removed** (`tRestrict`/`bRestrict`) underneath and extending slightly outward from L1, L2, and L3 on both layers to prevent eddy currents from destroying the inductors' Q-factor.
 
